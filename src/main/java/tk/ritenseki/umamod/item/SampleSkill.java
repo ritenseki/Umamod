@@ -10,11 +10,16 @@ import tk.ritenseki.umamod.Group.GroupInitialize;
 import javax.annotation.Nullable;
 import java.time.Duration;
 
-public abstract class SampleSkill extends Item {
+public  class SampleSkill extends Item {
 
-    static Effect setting;
-    static int duration, amplifier;
-    private static EffectInstance effect = new EffectInstance(
+    protected static Effect setting;
+    protected static int duration, amplifier;
+    public void setEffect(Effect setting, int duration, int amplifier){
+        SampleSkill.setting = setting;
+        SampleSkill.duration = duration;
+        SampleSkill.amplifier = amplifier;
+    }
+    private static final EffectInstance effect = new EffectInstance(
             setting, duration, amplifier);
     private static Food food = (new Food.Builder())
             .effect(effect, 1)
