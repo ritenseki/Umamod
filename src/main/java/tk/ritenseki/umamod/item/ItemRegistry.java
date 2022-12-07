@@ -7,7 +7,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import tk.ritenseki.umamod.item.GoldSkill.*;
 import tk.ritenseki.umamod.item.GreenSkill.*;
 import tk.ritenseki.umamod.item.PurpleSkill.*;
-import tk.ritenseki.umamod.item.RedSkill.*;
+//import tk.ritenseki.umamod.item.RedSkill.*;
 
 public class ItemRegistry {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, "UmaSkill");
