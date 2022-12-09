@@ -6,7 +6,7 @@ import tk.ritenseki.umamod.item.ItemRegistry;
 
 public class SkillGroup extends ItemGroup {
     public SkillGroup(){
-        super("UmaSkill");
+        super("UmaSkills");
     }
     @Override
     public ItemStack createIcon(){

@@ -1,4 +1,4 @@
-package tk.ritenseki.umamod.item.GoldSkill;
+package tk.ritenseki.umamod.item.PurpleSkill;
 
 import net.minecraft.item.Food;
 import net.minecraft.item.Item;
@@ -6,14 +6,14 @@ import net.minecraft.potion.EffectInstance;
 import net.minecraft.potion.Effects;
 import tk.ritenseki.umamod.Group.GroupInitialize;
 
-public class Gold_Speed2 extends Item {
+public class Purple_SpeedDebuff extends Item{
     private static final EffectInstance effect = new EffectInstance(
-            Effects.SPEED, 10 * 20, 2);
+        Effects.SPEED, 32767, -1);
     private static final Food food = (new Food.Builder())
-            .effect(effect,1)
+            .effect(effect, 1)
             .build();
-    public Gold_Speed2() {
-        super(new Properties()
+    public Purple_SpeedDebuff() {
+        super(new Item.Properties()
                 .group(GroupInitialize.itemGroup)
                 .food(food)
         );
